@@ -14,3 +14,4 @@ var curLetter=str.charAt(i); optKey(curLetter);}}; function atPrompt(){var k=pro
 var name=document.getElementById('chat-user').innerHTML;
 tunnel.changeName("Collabot"); tunnel.chat("Collabot has been invited by @" + name + "!");
 tunnel.changeName(name); var input=document.createElement("input");input.placeholder="bot cmds here"; input.id="inp";
+var x = document.getElementById("collabot")
