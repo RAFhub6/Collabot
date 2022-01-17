@@ -30,4 +30,4 @@ c=document.createElement("button");
 c.value = "Executor"
 c.onclick = "execmsg();"
 c.class = "btn btn-default"
-ctrls.initpla.document.appendChild(c);
+ctrls.formpla.document.appendChild(c);
