@@ -18,6 +18,13 @@ function execmsg() {
     delete execmsg
     x=document.createElement("script");x.src="https://rafhub6.github.io/Collabot/botscript.js"; document.head.appendChild(x);
   }
+  if (cmdrun == "spam") {
+    let spam-time = prompt("How much time to spam?")
+    let spam-phrase = prompt("What is the phrase/text?")
+    times (spam-time) () => {
+      ctrls.chatinp.value = spam-phrase
+      ctrls.chatbtn.click()
+    }
 }
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
