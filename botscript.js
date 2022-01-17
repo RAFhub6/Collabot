@@ -26,4 +26,4 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
-cb-btn=document.createElement("button");cb-btn.class=='btn btn-default input-group';cb-btn.onclick=="execmsg();";cb-btn.value="=Executor";document.head.appendChild(cb-btn);
+cb-btn=document.createElement("button");cb-btn.class=='btn btn-default input-group';cb-btn.onclick=="execmsg();";cb-btn.value=="Executor";document.head.appendChild(cb-btn);
