@@ -1,5 +1,5 @@
-const chatinnner = document.getElementByID("chat-input").innerHTML
-const execbtp = document.getElementByID("chat-sound-btn").innerHTML
+const chatinnner = document.getElementById("chat-input").innerHTML
+const execbtp = document.getElementById("chat-sound-btn").innerHTML
 const execbtn = "<button class='btn btn-default' onclick='execmsg();'>Executor</button>"
 
 function execmsg() {
