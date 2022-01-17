@@ -21,9 +21,10 @@ function execmsg() {
   if (cmdrun == "spam") {
     let spamtime = prompt("How much time to spam?")
     let spamphrase = prompt("What is the phrase/text?")
-    times (spam-time) () => {
-      ctrls.chatinp.value = spamphrase
-      ctrls.chatbtn.click()
+
+    for(var i = 0; i < spamtime; i++){
+     ctrls.chatinp.value = spamphrase
+     ctrls.chatbtn.click()
     }
 }
 ctrls.nameinp.value = "Collabot"
