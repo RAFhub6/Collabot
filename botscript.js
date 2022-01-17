@@ -15,12 +15,10 @@ function execmsg() {
     ctrls.chatbtn.click()
   }
 }
-ctrls.namebtn.click();
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
 ctrls.chatinp.value = "Collabot has been deployed by" + ctrls.usernam + "!"
 ctrls.chatbtn.click()
-ctrls.namebtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
