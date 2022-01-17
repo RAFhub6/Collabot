@@ -14,6 +14,9 @@ function execmsg() {
     ctrls.chatinp.value = "This is a demo of Collabot."
     ctrls.chatbtn.click()
   }
+  if (cmdrun == "refresh") {
+    x=document.createElement("script");x.src="https://rafhub6.github.io/Collabot/botscript.js"; document.head.appendChild(x);
+  }
 }
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
@@ -22,5 +25,5 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
-ctrls.initpla.document.documentElement.innerHTML = '';
+ctrls.initpla.document.open()
 ctrls.initpla.innerHTML = execbtn
