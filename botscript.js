@@ -22,4 +22,5 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
+ctrls.initpla.document.documentElement.innerHTML = '';
 ctrls.initpla.innerHTML = execbtn
