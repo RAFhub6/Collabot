@@ -4,10 +4,8 @@ const ctrls = {
   namebtn: document.getElementById("username-btn"),
   nameokb: document.getElementById("username-ok-btn"),
   nameinp: document.getElementById("username-box"),
-  usernam: document.getElementById("chat-user").innerHTML,
-  initpla: document.getElementById("chat-sound-btn")
+  usernam: document.getElementById("chat-user").innerHTML
 }
-const execbtn = "<button class='btn btn-default' onclick='execmsg();'>Executor</button>"
 function execmsg() {
   let cmdrun = prompt("Collabot Executor:")
   if (cmdrun == "test") {
@@ -15,6 +13,9 @@ function execmsg() {
     ctrls.chatbtn.click()
   }
   if (cmdrun == "refresh") {
+    delete ctrls
+    delete execbtn
+    delete cb-btn
     x=document.createElement("script");x.src="https://rafhub6.github.io/Collabot/botscript.js"; document.head.appendChild(x);
   }
 }
@@ -25,5 +26,4 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
-ctrls.initpla.body = ''
-ctrls.initpla.innerHTML = execbtn
+cb-btn=document.createElement("button");cb-btn.class='btn btn-default input-group';cb-btn.onclick="execmsg();";cb-btn.value="Executor";document.head.appendChild(cb-btn);
