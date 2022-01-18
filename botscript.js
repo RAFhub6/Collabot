@@ -12,16 +12,13 @@ function execmsg() {
   if (cmdrun == "test") {
     ctrls.chatinp.value = "This is a demo of Collabot."
     ctrls.chatbtn.click()
-  }
-  if (cmdrun == "refresh") {
+  } else if (cmdrun == "refresh") {
     delete ctrls
     delete execmsg
     x=document.createElement("script");x.src="https://rafhub6.github.io/Collabot/botscript.js"; document.head.appendChild(x);
-  }
-  if (cmdrun == "spam") {
+  } else if (cmdrun == "spam") {
     let spamtime = prompt("How much time to spam?")
     let spamphrase = prompt("What is the phrase/text?")
-
     for(var i = 0; i < spamtime; i++){
      ctrls.chatinp.value = spamphrase
      ctrls.chatbtn.click()
