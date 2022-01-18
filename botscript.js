@@ -22,7 +22,8 @@ function execmsg() {
     for(var i = 0; i < spamtime; i++){
      ctrls.chatinp.value = spamphrase
      ctrls.chatbtn.click()
-    }
+   }
+  }
 }
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
