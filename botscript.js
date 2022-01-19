@@ -32,7 +32,8 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
-let execbtn = ctrls.formpla.document.createElement("button")
+let execbtn = document.createElement("button")
 execbtn.class = "btn btn-default"
 execbtn.onclick = "execmsg();"
 execbtn.value = "Executor"
+ctrls.formpla.document.appendChild("execbtn")
