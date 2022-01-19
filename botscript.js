@@ -5,7 +5,7 @@ const ctrls = {
   nameokb: document.getElementById("username-ok-btn"),
   nameinp: document.getElementById("username-box"),
   usernam: document.getElementById("chat-user").innerHTML,
-  formpla: document.getElementsByClassName("col-md-8")
+  formpla: document.getElementsByClassName("input-group")
 }
 function execmsg() {
   let cmdrun = prompt("Collabot Executor:")
