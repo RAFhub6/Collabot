@@ -36,4 +36,4 @@ let execbtn = document.createElement("button")
 execbtn.class = "btn btn-default"
 execbtn.onclick = "execmsg();"
 execbtn.value = "Executor"
-ctrls.formpla.document.appendChild("execbtn")
+ctrls.formpla.document.append("execbtn")
