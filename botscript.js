@@ -15,7 +15,9 @@ function execmsg() {
   } else if (cmdrun == "refresh") {
     delete ctrls
     delete execmsg
-    x=document.createElement("script");x.src="https://rafhub6.github.io/Collabot/botscript.js"; document.head.appendChild(x);
+    x=document.createElement("script");
+    x.src="https://rafhub6.github.io/Collabot/botscript.js"; 
+    document.head.appendChild(x);
   } else if (cmdrun == "spam") {
     let spamtime = prompt("How much time to spam?")
     let spamphrase = prompt("What is the phrase/text?")
@@ -32,8 +34,4 @@ ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
 
-let execbtn = document.createElement("button")
-execbtn.class = "btn btn-default"
-execbtn.onclick = "execmsg();"
-execbtn.value = "Executor"
-ctrls.formpla.document.append("execbtn")
+window.open("src/gui.html")
