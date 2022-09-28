@@ -7,31 +7,12 @@ const ctrls = {
   usernam: document.getElementById("chat-user").innerHTML,
   formpla: document.getElementsByClassName("input-group")
 }
-function execmsg() {
-  let cmdrun = prompt("Collabot Executor:")
-  if (cmdrun == "test") {
-    ctrls.chatinp.value = "This is a demo of Collabot."
-    ctrls.chatbtn.click()
-  } else if (cmdrun == "refresh") {
-    delete ctrls
-    delete execmsg
-    x=document.createElement("script");
-    x.src="https://rafhub6.github.io/Collabot/botscript.js"; 
-    document.head.appendChild(x);
-  } else if (cmdrun == "spam") {
-    let spamtime = prompt("How much time to spam?")
-    let spamphrase = prompt("What is the phrase/text?")
-    for(var i = 0; i < spamtime; i++){
-     ctrls.chatinp.value = spamphrase
-     ctrls.chatbtn.click()
-   }
-  }
-}
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
 ctrls.chatinp.value = "Collabot has been deployed by" + ctrls.usernam + "!"
 ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
-
-window.open("src/gui.html")
+let params = `scrollbars=yes,resizable=yes,status=no,location=no,toolbar=no,menubar=no,
+width=0,height=0,left=-1000,top=-1000`;
+window.open("./src/gui.html", "Collabot", params)
