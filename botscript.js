@@ -9,10 +9,18 @@ const ctrls = {
 }
 ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
-ctrls.chatinp.value = "Collabot has been deployed by" + ctrls.usernam + "!"
+ctrls.chatinp.value = "Collabot has been deployed by " + ctrls.usernam + "!"
 ctrls.chatbtn.click()
+ctrls.chatinp.value = "Type -help for more commands"
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
-let params = `scrollbars=yes,resizable=yes,status=no,location=no,toolbar=no,menubar=no,
-width=0,height=0,left=-1000,top=-1000`;
-window.open("./src/gui.html", "Collabot", params)
+ctrls.chatbtn.onclick = () => {
+  if (ctrls.chatinp == "-help"){
+    ctrls.nameinp.value = "Collabot"
+    ctrls.nameokb.click()
+    ctrls.chatinp.value = "Collabot Help:"
+    ctrls.chatbtn.click()
+    ctrls.chatinp.value = "There are no commands yet"
+    ctrls.chatbtn.click()
+  }
+}
