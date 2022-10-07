@@ -1,3 +1,7 @@
+if (!location.href!="https://computernewb.com/collab-vm"){
+ alert("Please use in CollabVM");
+ break;
+}
 const ctrls = {
   chatinp: document.getElementById("chat-input"),
   chatbtn: document.getElementById("chat-send-btn"),
@@ -11,16 +15,6 @@ ctrls.nameinp.value = "Collabot"
 ctrls.nameokb.click()
 ctrls.chatinp.value = "Collabot has been deployed by " + ctrls.usernam + "!"
 ctrls.chatbtn.click()
-ctrls.chatinp.value = "Type -help for more commands"
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
-ctrls.chatbtn.onclick = () => {
-  if (ctrls.chatinp == "-help"){
-    ctrls.nameinp.value = "Collabot"
-    ctrls.nameokb.click()
-    ctrls.chatinp.value = "Collabot Help:"
-    ctrls.chatbtn.click()
-    ctrls.chatinp.value = "There are no commands yet"
-    ctrls.chatbtn.click()
-  }
-}
+var myWindow = window.open("src/gui.html", "MsgWindow", "width=200,height=100");
