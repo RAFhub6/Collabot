@@ -1,6 +1,5 @@
 if (!location.href!="https://computernewb.com/collab-vm"){
  alert("Please use in CollabVM");
- break;
 }
 const ctrls = {
   chatinp: document.getElementById("chat-input"),
