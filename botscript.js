@@ -1,6 +1,3 @@
-if (!location.href!="https://computernewb.com/collab-vm"){
- alert("Please use in CollabVM");
-}
 const ctrls = {
   chatinp: document.getElementById("chat-input"),
   chatbtn: document.getElementById("chat-send-btn"),
@@ -16,4 +13,4 @@ ctrls.chatinp.value = "Collabot has been deployed by " + ctrls.usernam + "!"
 ctrls.chatbtn.click()
 ctrls.nameinp.value = ctrls.usernam
 ctrls.nameokb.click()
-var myWindow = window.open("src/gui.html", "MsgWindow", "width=200,height=100");
+var myWindow = window.open("http://rafhub6.github.io/Collabot/src/gui.html", "MsgWindow", "width=200,height=100");
